@@ -17,11 +17,11 @@ if __name__ == "__main__":
         {os.getenv("ADDRESS")}
         Лицевой счет {os.getenv("ACCOUNT")}
         Кухня:
-        ГВС - {44 + months * 2}
+        ГВС - {44 + months * 1}
         ХВС - {123 + months * 2}
         Сан. узел:
         ГВС - {101 + months * 2}
-        ХВС - {261 + months * 2}
+        ХВС - {261 + months * 4}
     
         89О4676O579''')
 
