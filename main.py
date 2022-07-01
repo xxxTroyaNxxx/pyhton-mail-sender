@@ -30,7 +30,7 @@ if __name__ == "__main__":
     print("Message prepared")
 
     # Send the message via our own SMTP server.
-    server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)
+    server = smtplib.SMTP_SSL('smtp.yandex.com', 465)
     server.login(os.getenv("mail-mine"), os.getenv("psw"))
     server.send_message(msg)
     print("message sent")
