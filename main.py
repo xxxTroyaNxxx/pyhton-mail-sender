@@ -23,11 +23,12 @@ if __name__ == "__main__":
         ГВС - {101 + months * 2}
         ХВС - {261 + months * 4}
     
-        89О4676O579''')
+        {os.getenv("PHONE")}''')
 
         msg['Subject'] = os.getenv("ADDRESS")
         msg['From'] = os.getenv("mail-mine")
         msg['To'] = os.getenv("mail-send")
+        msg['CC'] = os.getenv("mail-mine")
 
         print("Message prepared")
 
@@ -40,3 +41,4 @@ if __name__ == "__main__":
         print("server quit")
     else:
         print("For sending message use \"send_message\"")
+        exit(1)
